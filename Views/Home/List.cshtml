@@ -1,0 +1,54 @@
+@model IEnumerable<MVCTest.Models.Person>
+
+
+<link rel="stylesheet" href="../css/List.css">
+<div class="text-center">
+    <h1 class="display-4">List</h1>
+
+
+    <table>
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Name)</td>
+                <td>@Html.DisplayNameFor(x => x.LastName)</td>
+                <td>@Html.DisplayNameFor(x => x.Email)</td>
+                <td>@Html.DisplayNameFor(x => x.Phone)</td>
+                <td>@Html.DisplayNameFor(x => x.CompanyName)</td>
+                <td>@Html.DisplayNameFor(x => x.JobTitle)</td>
+            </tr>
+        </thead>
+        <tfoot></tfoot>
+
+        <tbody>
+@foreach (var item in Model)
+{
+    
+            <tr>
+                <td class="tds-foreach">
+                    @Html.DisplayFor(modelItem => item.Name);
+                </td>
+
+                <td class="tds-foreach">
+                    @Html.DisplayFor(modelItem => item.LastName);
+                </td>
+
+                <td class="tds-foreach">
+                    @Html.DisplayFor(modelItem => item.Email);
+                </td>
+
+                <td class="tds-foreach">
+                    @Html.DisplayFor(modelItem => item.Phone);
+                </td>
+
+                <td class="tds-foreach">
+                    @Html.DisplayFor(modelItem => item.CompanyName);
+                </td>
+
+                <td class="tds-foreach">
+                    @Html.DisplayFor(modelItem => item.JobTitle);
+                </td>
+            </tr>
+}
+        </tbody>
+    </table>
+</div>

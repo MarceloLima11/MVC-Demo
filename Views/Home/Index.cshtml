@@ -1,0 +1,48 @@
+﻿@model MVCTest.Models.Person
+
+
+<link rel="stylesheet" href="../css/index.css">
+<div class="text-center">
+    <h1 class="display-4">Contact Us</h1>
+
+                    <form asp-controller="Home" asp-action="Create" method="post">
+                    <div id="row">
+                        <div class="col-1-2">
+                            <label for="name">Name</label>
+                            <input asp-for="Name" type="text" id="name" class="form-input"> 
+
+                            <label for="email">E-mail</label>
+                            <input asp-for="Email" type="email" id="email" class="form-input">
+
+                            <label for="companyName">Company Name</label>
+                            <input asp-for="CompanyName" type="text" id="companyName" class="form-input">
+
+                            <label for="city">City</label>
+                            <input asp-for="City" type="text" id="city" class="form-input">
+
+                            <label for="postalC">ZIP/Postal Code</label>
+                            <input asp-for="PostalCode" type="text" id="postalC" class="form-input">
+                        </div>
+
+
+                        <div class="col-1-2">
+                            <label for="lastName">Last name</label>
+                            <input asp-for="LastName" type="text" id="lastName" class="form-input">
+
+                            <label for="businessPhone">Business Phone</label>
+                            <input asp-for="Phone" type="tel" id="businessPhone" class="form-input">
+
+                            <label for="jobTitle">Job Title</label>
+                            <input asp-for="JobTitle" type="text" id="jobTitle" class="form-input">
+
+                            <label for="state">State/Province</label>
+                            <input asp-for="State" type="text" id="state" class="form-input">
+
+                            <label for="country">Country/Region</label>
+                            <input asp-for="Country" type="text" id="postalC" class="form-input">
+                        </div>
+                    </div>
+                    <input type="submit" value="Send" class="button-default" asp-controller="Home" asp-action="Create">
+                    <input type="reset" value="Reset" class="button-default reset">
+                </form>
+</div>

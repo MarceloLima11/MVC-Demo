@@ -1,0 +1,43 @@
+
+#row{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+  }
+  .col-1-2{
+    box-sizing: border-box;
+    width: 48%;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin: auto 1%;
+  }
+  .form-input{
+    width: 80%;
+  }
+  form label{
+    display: block;
+    margin: 5px 0;
+  }
+  
+  /* Buttons */
+  .button-default{
+    width: 70px;
+    margin: 10px 6px 0 10px;
+    font-size: 17px;
+    background-color: #0f740f;
+    color: white;
+    border-radius: 5px;
+    border: transparent;
+    transition: .2s background-color linear;
+  }
+  .button-default:hover{
+    background-color: #17bb17;
+  }
+  .reset{
+    background-color: rgb(173, 20, 20);
+    border: transparent;
+  }
+  .reset:hover{
+    background-color: rgb(231, 12, 12);
+  }

@@ -1,0 +1,20 @@
+.display-4{
+    font-weight: 700;
+    color: #a2a2a2;
+    margin-bottom: 3%;
+}
+
+table{
+    width: 100%;
+}
+thead td{
+    font-size: 26px;
+}
+thead tr td{
+    border: 2px solid rgb(0, 0, 0);
+}
+.tds-foreach{
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
